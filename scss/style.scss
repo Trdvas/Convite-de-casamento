@@ -238,7 +238,7 @@ p {
   width: 100%;
   height: calc(var(--vh, 1vh) * 100);
   // background-blend-mode: multiply;
-  background-image: url("../img/Virginia&Thiego-PortoDasDunas-3.jpeg");
+  background-image: url("../img/Virginia-Thiego-PortoDasDunas-3.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -337,7 +337,7 @@ p {
 }
 
 #landing {
-  background-image: url("../img/Virginia&Thiego-PortoDasDunas-72.jpeg");
+  background-image: url("../img/Virginia-Thiego-PortoDasDunas-72.jpeg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -346,7 +346,8 @@ p {
   z-index: 11;
   position: relative;
   height: 800px;
-  position: fixed;
+  position: relative;
+  min-height: 100vh;
   width: 100%;
   top: 0px;
   display: flex;
