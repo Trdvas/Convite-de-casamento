@@ -337,6 +337,7 @@ p {
 }
 
 #landing {
+   background-attachment: scroll;
   background-image: url("../img/Virginia-Thiego-PortoDasDunas-72.jpeg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -346,7 +347,6 @@ p {
   z-index: 11;
   position: relative;
   height: 800px;
-  position: relative;
   min-height: 100vh;
   width: 100%;
   top: 0px;
