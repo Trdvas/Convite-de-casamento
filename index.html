@@ -69,9 +69,7 @@
           nav: false,
         });
 
-        const deadline = new Date(
-          Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000
-        );
+        const deadline = new Date("2025-12-13T19:00:00");
         initializeClock("clockdiv", deadline);
 
         $(".btn-invitation").click(function () {
@@ -191,7 +189,35 @@
         </div>
         <h2 class="title-countdown">Até nos casarmos!</h2>
       </div>
-
+      
+      <!-- Slider -->
+      <div class="photo owl-carousel owl-theme owl-loaded" id="photo-gallery">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="owl-item">
+              <img src="img/Virginia&Thiego-PortoDasDunas-9.jpg" alt="" srcset="" />
+            </div>
+            <div class="owl-item">
+              <img src="img/Virginia&Thiego-PortoDasDunas-8.jpg"srcset="" />
+            </div>
+            <div class="owl-item">
+              <img src="img/Virginia&Thiego-PortoDasDunas-66.jpg"srcset="" />
+            </div>
+            <div class="owl-item">
+              <img src="img/Virginia&Thiego-PortoDasDunas-23.jpg"srcset="" />
+            </div>
+            <div class="owl-item">
+              <img src="img/Virginia&Thiego-PortoDasDunas-58.jpg"srcset="" />
+            </div>
+            <div class="owl-item">
+              <img src="img/Virginia&Thiego-PortoDasDunas-6.jpg"srcset="" />
+            </div>
+            <div class="owl-item">
+              <img src="img/Virginia&Thiego-PortoDasDunas-61.jpg"srcset="" />
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row bg-white">
         <div class="box-lg">
 
@@ -248,34 +274,6 @@
         </div>
       </div> -->
 
-      <!-- Slider -->
-      <div class="photo owl-carousel owl-theme owl-loaded" id="photo-gallery">
-        <div class="owl-stage-outer">
-          <div class="owl-stage">
-            <div class="owl-item">
-              <img src="img/Virginia&Thiego-PortoDasDunas-9.jpg" alt="" srcset="" />
-            </div>
-            <div class="owl-item">
-              <img src="img/Virginia&Thiego-PortoDasDunas-8.jpg"srcset="" />
-            </div>
-            <div class="owl-item">
-              <img src="img/Virginia&Thiego-PortoDasDunas-66.jpg"srcset="" />
-            </div>
-            <div class="owl-item">
-              <img src="img/Virginia&Thiego-PortoDasDunas-23.jpg"srcset="" />
-            </div>
-            <div class="owl-item">
-              <img src="img/Virginia&Thiego-PortoDasDunas-58.jpg"srcset="" />
-            </div>
-            <div class="owl-item">
-              <img src="img/Virginia&Thiego-PortoDasDunas-6.jpg"srcset="" />
-            </div>
-            <div class="owl-item">
-              <img src="img/Virginia&Thiego-PortoDasDunas-61.jpg"srcset="" />
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Slider Story-->
         <!-- <div class="row bg-white" id="story">
@@ -350,11 +348,12 @@
 
             <div style="background: #fff; padding: 30px; border-radius: 10px; max-width: 500px; margin: 0 auto; text-align: center;">
               <p style="font-size: 18px; color: #333; line-height: 1.5;">
-                Se desejar nos presentear, você pode enviar um valor simbólico via <strong>PIX</strong>. 💝
+                Se desejar nos presentear, sua contribuição será um gesto de carinho que nos ajudará a construir o nosso lar com muito amor.
+                Você pode enviar um valor simbólico via <strong>PIX</strong> e fazer parte deste novo capítulo da nossa história. 💝
               </p>
 
               <p style="margin-top: 25px; font-size: 20px; font-weight: bold; color: #e65a00;">
-                Chave PIX: <span id="pixKey">thiago.virginia@pix.com.br</span>
+                Chave PIX: <span id="pixKey">5585998265257</span>
               </p>
 
               <button 
@@ -435,5 +434,25 @@
         </li>
       </ul>
     </nav>
+      <script>
+      function copyPix() {
+        const chavePix = "85998265257";
+        
+        // Usa a API moderna de clipboard do navegador
+        navigator.clipboard.writeText(chavePix).then(() => {
+          //   Mostra uma mensagem de confirmação
+          alert("Chave PIX copiada: " + chavePix);
+        }).catch(err => {
+          // Caso o navegador não suporte, faz uma cópia alternativa
+          const input = document.createElement("input");
+          input.value = chavePix;
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand("copy");
+          document.body.removeChild(input);
+          alert("Chave PIX copiada: " + chavePix);
+        });
+      }
+  </script>
   </body>
 </html>

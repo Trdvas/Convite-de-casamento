@@ -37,3 +37,9 @@ function initializeClock(id, endtime) {
   updateClock();
   const timeinterval = setInterval(updateClock, 1000);
 }
+
+// 👇 Aqui definimos a data final do casamento
+const deadline = new Date("2025-12-13T19:00:00");
+
+// 👇 'clockdiv' deve ser o ID do elemento HTML que contém o contador
+initializeClock("clockdiv", deadline);
