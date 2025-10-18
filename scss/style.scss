@@ -340,12 +340,12 @@ p {
   background-image: url("../img/Virginia-Thiego-PortoDasDunas-72.jpeg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply;
   z-index: 11;
   position: relative;
-  height: 800px;
+  height: 100vh;
   position: fixed;  
   width: 100%;
   top: 0px;
