@@ -76,49 +76,49 @@
           $("#landing").addClass("move-gate");
         });
 
-        window.onscroll = function () {
-          scrollFunction();
-        };
+        // window.onscroll = function () {
+          // scrollFunction();
+        // };
 
-        function scrollFunction() {
-          if (
-            document.body.scrollTop > 60 ||
-            document.documentElement.scrollTop > 20
-          ) {
-            document.getElementById("sticky-navbar").style.bottom = "0";
-          } else {
-            document.getElementById("sticky-navbar").style.bottom = "-50px";
-          }
-        }
+        // function scrollFunction() {
+          // if (
+            // document.body.scrollTop > 60 ||
+            // document.documentElement.scrollTop > 20
+          // ) {
+            // document.getElementById("sticky-navbar").style.bottom = "0";
+          // } else {
+            // document.getElementById("sticky-navbar").style.bottom = "-50px";
+          // }
+        // }
 
-        $("a").on("click", function (event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top,
-              },
-              800,
-              function () {
-                window.location.hash = hash;
-              }
-            );
-          }
-        });
+        // $("a").on("click", function (event) {
+          // if (this.hash !== "") {
+            // event.preventDefault();
+            // var hash = this.hash;
+            // $("html, body").animate(
+              // {
+                // scrollTop: $(hash).offset().top,
+              // },
+              // 800,
+              // function () {
+                // window.location.hash = hash;
+              // }
+            // );
+          // }
+        // });
       });
     </script>
-    <title>SILVER</title>
+    <title>Virgínia & Thiego</title>
   </head>
   <body>
-    <div id="landing">
+    <!-- <div id="landing">
       <div id="landing-title">
         <div class="main-title"></div>
         <div class="sub-title"></div>
         <div class="bride-title"></div>
       </div>
       <button class="btn-invitation">♥ Abrir convite</button>
-    </div>
+    </div> -->
     <div class="container">
       <!-- Slider -->
       <div class="banner" id="top-banner">
