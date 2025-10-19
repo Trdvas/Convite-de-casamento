@@ -452,10 +452,16 @@
       </ul>
     </nav>
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      $(window).on("load", function() {
 
-        window.scrollTo(0, 0);
+        $("html, body").scrollTop(0); // scroll imediato para o topo
+      // Se quiser scroll suave, pode usar:
+      // $("html, body").animate({ scrollTop: 0 }, 0);
       });
+     
       function copyPix() {
         const chavePix = "85998265257";
         
