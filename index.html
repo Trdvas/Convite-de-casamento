@@ -207,7 +207,12 @@
 
         </div>
       </div>
-
+      <div class="btn-center">
+        <button onclick="confirmPresence()" style="background-color:#e65a00 ; color: white; border: none;border-radius: 8px;padding: 12px 30px; font-size: 16px;font-weight: bold;text-align: center; display: 
+        inline-block;transition: background-color 0.3s ease;">
+          Confirmar Presença
+        </button> 
+      </div>
       <div class="row bg-white center countdown">
         <h2 class="title-countdown">Faltam</h2>
         <div id="clockdiv">
@@ -461,6 +466,12 @@
       // Se quiser scroll suave, pode usar:
       // $("html, body").animate({ scrollTop: 0 }, 0);
       });
+      
+      function confirmPresence() {
+        const link = "https://api.whatsapp.com/send/?phone=5585986180219&text=%22Confirmo+a+minha+presen%C3%A7a%21%22&type=phone_number&app_absent=0";
+        window.open(link, "_blank"); // abre o link em nova aba
+      }
+
      
       function copyPix() {
         const chavePix = "85998265257";
